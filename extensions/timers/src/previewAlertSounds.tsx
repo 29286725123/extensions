@@ -9,7 +9,9 @@ export default function Command() {
   const playSound = (fileName: string) => {
     let command;
     if (fileName === "speak_timer_name") {
-      command = `say "Untitled Timer"`;
+        command = `say "Untitled Timer"`;
+    } else if (fileName === "custom_15m_wav") {
+      command = `afplay "$HOME/Documents/My Sound Effects/AI_15m_Timer_Alert_5sec.wav"`;
     } else {
       const selectedSoundPath = `${environment.assetsPath + "/" + fileName}`;
       command = `afplay "${selectedSoundPath}" --volume ${prefs.volumeSetting.replace(",", ".")}`;

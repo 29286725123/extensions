@@ -239,6 +239,10 @@
         {
           "title": "Speak Timer Name",
           "value": "speak_timer_name"
+        },
+        {
+          "title": "Custom 15m Alert",
+          "value": "custom_15m_wav"
         }
       ]
     },
